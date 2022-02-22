@@ -1,0 +1,46 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="Ταξινόμηση ">
+
+        <ListPreference
+
+            app:entries="@array/hmerominia_entries"
+            app:entryValues="@array/hmerominia_values"
+            app:iconSpaceReserved="false"
+            app:key="hmerominia"
+            app:title="Ημερομηνία"
+            app:useSimpleSummaryProvider="true"
+            android:defaultValue="1"/>
+
+        <PreferenceCategory android:title="Φίλτρα"
+            app:iconSpaceReserved="false">
+
+            <MultiSelectListPreference
+                android:defaultValue="@array/megethos_entries"
+                android:entries="@array/megethos_entries"
+                android:entryValues="@array/megethos_values"
+                android:key="megethos"
+                android:title="Μέγεθος"
+                app:iconSpaceReserved="false" />
+            <EditTextPreference
+                app:iconSpaceReserved="false"
+                app:key="baros"
+                app:title="Βάρος"
+                app:useSimpleSummaryProvider="true"
+                android:inputType="numberDecimal"
+                android:digits="0123456789."/>
+            <MultiSelectListPreference
+                android:defaultValue="@array/etaireia_entries"
+                android:entries="@array/etaireia_entries"
+                android:entryValues="@array/etaireia_values"
+                android:key="etaireia"
+                app:iconSpaceReserved="false"
+                app:title="Εταιρεία" />
+        </PreferenceCategory>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

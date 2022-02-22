@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/icons8_package_delivery_logistics_48"
+        android:title="Πακέτα" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/icons8_in_transit_48"
+        android:title="Προς Παράδοση" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/icons8_male_user_48"
+        android:title="Προφίλ" />
+
+</menu>
